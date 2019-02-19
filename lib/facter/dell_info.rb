@@ -157,7 +157,7 @@ if Facter.value('manufacturer')
         end
         Facter.add(:warranty_end) do
           setcode do
-            warranty_end
+            warranty_end.to_s
           end
         end
       rescue Exception=>e
